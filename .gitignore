@@ -1,5 +1,16 @@
+/* venv */
 venv
 __pycache__
+
+/* ctags */
 tags
+tags.*
+
+/* autoenv */
+.env
+.env.leave
+
+/* flask */
+.flaskenv
 
 
