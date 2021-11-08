@@ -1,6 +1,8 @@
 /* venv */
 venv
 __pycache__
+*.so
+*.pyc
 
 /* ctags */
 tags
@@ -12,5 +14,4 @@ tags.*
 
 /* flask */
 .flaskenv
-
-
+app.db
