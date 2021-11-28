@@ -17,3 +17,5 @@ class Config:
     ADMINS = ['flaskprojectinbox@gmail.com']
     # pagination
     POSTS_PER_PAGE = 10
+    # translations
+    LANGUAGES = ['en', 'es', 'pl']
