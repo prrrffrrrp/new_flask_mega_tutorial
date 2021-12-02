@@ -18,4 +18,6 @@ class Config:
     # pagination
     POSTS_PER_PAGE = 10
     # translations
-    LANGUAGES = ['en', 'es', 'pl']
+    LANGUAGES = ['en', 'es']
+    # Azure translator service
+    MS_TRANSLATOR_KEY = os.environ.get('MS_TRANSLATOR_KEY')

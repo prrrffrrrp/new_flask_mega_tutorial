@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-11-28 17:25+0100\n"
+"POT-Creation-Date: 2021-12-02 18:14+0100\n"
 "PO-Revision-Date: 2021-11-28 17:00+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -74,57 +74,73 @@ msgstr "Prueba con otra direccion de correo electronico"
 msgid "Request Password Reset"
 msgstr "Pedir una nueva contrasena"
 
-#: app/routes.py:29
+#: app/routes.py:31
 msgid "Your changes have been saved."
 msgstr "Los cambios han sido guardados"
 
-#: app/routes.py:54 app/routes.py:164
+#: app/routes.py:56 app/routes.py:178
 #, python-format
 msgid "User %(username)s not found."
 msgstr "Usuario %(username)s no ha sido encontrado"
 
-#: app/routes.py:57
+#: app/routes.py:59
 msgid "You cannot follow yourself!"
 msgstr "No te puedes seguir a ti mismo!"
 
-#: app/routes.py:61
+#: app/routes.py:63
 #, python-format
 msgid "You are following %(username)s"
 msgstr "Estas siguiendo a %(username)s"
 
-#: app/routes.py:76
+#: app/routes.py:82
 msgid "Your post is now live!"
 msgstr "Tu post ha sido publicado!"
 
-#: app/routes.py:94
+#: app/routes.py:100
 msgid "Invalid username or password"
 msgstr "Nombre de usuario o contrasena invalidos"
 
-#: app/routes.py:122
+#: app/routes.py:128
 msgid "Congratulations, you are now a registered user!"
 msgstr "Felicidades, te has registrado como nuevo usuario"
 
-#: app/routes.py:138
+#: app/routes.py:144
 msgid "Your password has been reset."
 msgstr "Ya tienes una nueva contrasena"
 
-#: app/routes.py:152
+#: app/routes.py:158
 msgid "Check your email for the instructions to reset your password"
 msgstr ""
 "Comprueba tu correo electronico. Te hemos enviado las instrucciones para "
 "cambiar tu contrasena"
 
-#: app/routes.py:167
+#: app/routes.py:181
 msgid "You cannot unfollow yourself!"
 msgstr "No puedes dejar de seguirte a ti mismo"
 
-#: app/routes.py:171
+#: app/routes.py:185
 #, python-format
 msgid "You are not following %(username)s"
 msgstr "Ya no estas siguiendo a %(username)s"
+
+#: app/translate.py:9
+msgid "Error: the translation service is not configured."
+msgstr "Error: el servicio de traduccion no esta configurado"
+
+#: app/translate.py:20
+msgid "Error: the translation service failed."
+msgstr "Error: Ha habido un fallo en el servicio de traduccion."
 
 #: app/templates/_post.html:16
 #, python-format
 msgid "%(username)s said %(when)s"
 msgstr "%(username)s dijo %(when)s"
+
+#: app/templates/_post.html:27
+msgid "Translate"
+msgstr "Traducir"
+
+#: app/templates/base.html:67
+msgid "Error: Could not contact server."
+msgstr "Error: No se ha podido establecer contacto con el servidor"
 
