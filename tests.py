@@ -1,16 +1,26 @@
 import pytest
-from app import app, db
+from app import create_app, db
 from app.models import User, Post
+from config import Config
 from datetime import datetime, timedelta
+
+
+class TestConfig(Config):
+    TESTING = True
+    SQLALCHEMY_DATABASE_URI = 'sqlite://'
 
 
 @pytest.fixture(scope='function')
 def test_db():
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite://'
+    app = create_app(TestConfig)
+    app_context = app.app_context()
+    app_context.push()
+
     db.create_all()
     yield
     db.session.remove()
     db.drop_all()
+    app_context.pop()
 
 
 def test_password_hashing(test_db):

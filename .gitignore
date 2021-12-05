@@ -13,6 +13,9 @@ tags.*
 .env.leave
 
 /* flask */
+.auto_env
+.auto_env*
+.env
 .flaskenv
 app.db
 logs
