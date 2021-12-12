@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-12-05 17:09+0100\n"
+"POT-Creation-Date: 2021-12-12 07:42+0100\n"
 "PO-Revision-Date: 2021-11-28 17:00+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: app/__init__.py:20
+#: app/__init__.py:21
 msgid "Please log in to access this page."
 msgstr "Por favor inicia la session para acceder a esta pagina."
 
@@ -34,7 +34,7 @@ msgstr "Error: Ha habido un fallo en el servicio de traduccion."
 msgid "[Microblog] Reset Your Password"
 msgstr "[Microblog] Reiniciar contrasena"
 
-#: app/auth/forms.py:9 app/auth/forms.py:16 app/main/forms.py:9
+#: app/auth/forms.py:9 app/auth/forms.py:16 app/main/forms.py:10
 msgid "Username"
 msgstr "Nombre de usuario"
 
@@ -62,7 +62,7 @@ msgstr "Repite la contrasena"
 msgid "Register"
 msgstr "Registrate"
 
-#: app/auth/forms.py:25 app/main/forms.py:21
+#: app/auth/forms.py:25 app/main/forms.py:22
 msgid "Please use a different username."
 msgstr "Prueba con un nombre the usuario diferente"
 
@@ -88,7 +88,7 @@ msgstr "Ya tienes una nueva contrasena"
 
 #: app/auth/routes.py:79
 msgid "Check your email for the instructions to reset your password"
-msgstr ""
+msgstr "Comprueba las instrucciones en tu correo electronico"
 "Comprueba tu correo electronico. Te hemos enviado las instrucciones para "
 "cambiar tu contrasena"
 
@@ -97,57 +97,61 @@ msgstr ""
 msgid "Reset Password"
 msgstr "Repite la contrasena"
 
-#: app/main/forms.py:10
+#: app/main/forms.py:11
 msgid "About me"
 msgstr "Acerca de mi"
 
-#: app/main/forms.py:11 app/main/forms.py:25 app/main/forms.py:30
+#: app/main/forms.py:12 app/main/forms.py:26 app/main/forms.py:31
 msgid "Submit"
 msgstr "Enviar"
 
-#: app/main/forms.py:29
+#: app/main/forms.py:30
 msgid "Say something"
 msgstr "Escribe algo"
 
-#: app/main/routes.py:29
+#: app/main/forms.py:35 app/main/routes.py:101
+msgid "Search"
+msgstr "Buscar"
+
+#: app/main/routes.py:30
 msgid "Your changes have been saved."
 msgstr "Los cambios han sido guardados"
 
-#: app/main/routes.py:34
+#: app/main/routes.py:35
 msgid "Edit Profile"
 msgstr "Editar Perfil"
 
-#: app/main/routes.py:44 app/templates/base.html:24
+#: app/main/routes.py:45 app/templates/base.html:24
 msgid "Explore"
 msgstr "Explorar"
 
-#: app/main/routes.py:54 app/main/routes.py:104
+#: app/main/routes.py:55 app/main/routes.py:119
 #, python-format
 msgid "User %(username)s not found."
 msgstr "Usuario %(username)s no ha sido encontrado"
 
-#: app/main/routes.py:57
+#: app/main/routes.py:58
 msgid "You cannot follow yourself!"
 msgstr "No te puedes seguir a ti mismo!"
 
-#: app/main/routes.py:61
+#: app/main/routes.py:62
 #, python-format
 msgid "You are following %(username)s"
 msgstr "Estas siguiendo a %(username)s"
 
-#: app/main/routes.py:80
+#: app/main/routes.py:81
 msgid "Your post is now live!"
 msgstr "Tu post ha sido publicado!"
 
-#: app/main/routes.py:86 app/templates/base.html:23
+#: app/main/routes.py:87 app/templates/base.html:23
 msgid "Home"
 msgstr "Inicio"
 
-#: app/main/routes.py:107
+#: app/main/routes.py:122
 msgid "You cannot unfollow yourself!"
 msgstr "No puedes dejar de seguirte a ti mismo"
 
-#: app/main/routes.py:111
+#: app/main/routes.py:126
 #, python-format
 msgid "You are not following %(username)s"
 msgstr "Ya no estas siguiendo a %(username)s"
@@ -161,19 +165,19 @@ msgstr "%(username)s dijo %(when)s"
 msgid "Translate"
 msgstr "Traducir"
 
-#: app/templates/base.html:28
+#: app/templates/base.html:35
 msgid "Login"
 msgstr "Iniciar session"
 
-#: app/templates/base.html:30
+#: app/templates/base.html:37
 msgid "Profile"
 msgstr "Perfil"
 
-#: app/templates/base.html:31
+#: app/templates/base.html:38
 msgid "Logout"
 msgstr "Cerrar session"
 
-#: app/templates/base.html:67
+#: app/templates/base.html:74
 msgid "Error: Could not contact server."
 msgstr "Error: No se ha podido establecer contacto con el servidor"
 

@@ -25,3 +25,5 @@ class Config:
     LANGUAGES = ['en', 'es']
     # Azure translator service
     MS_TRANSLATOR_KEY = os.environ.get('MS_TRANSLATOR_KEY')
+    # elasticsearch
+    ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
