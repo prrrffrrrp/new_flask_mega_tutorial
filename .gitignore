@@ -19,3 +19,5 @@ tags.*
 .flaskenv
 app.db
 logs
+DOCKER_COMMANDS_CHEAT_SHEET.md
+*.md
