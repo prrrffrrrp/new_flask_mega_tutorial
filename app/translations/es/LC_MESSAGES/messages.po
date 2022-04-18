@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-12-12 07:42+0100\n"
+"POT-Creation-Date: 2022-01-13 05:39+0100\n"
 "PO-Revision-Date: 2021-11-28 17:00+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -88,9 +88,10 @@ msgstr "Ya tienes una nueva contrasena"
 
 #: app/auth/routes.py:79
 msgid "Check your email for the instructions to reset your password"
-msgstr "Comprueba las instrucciones en tu correo electronico"
-"Comprueba tu correo electronico. Te hemos enviado las instrucciones para "
-"cambiar tu contrasena"
+msgstr ""
+"Comprueba las instrucciones en tu correo electronicoComprueba tu correo "
+"electronico. Te hemos enviado las instrucciones para cambiar tu "
+"contrasena"
 
 #: app/auth/routes.py:81
 #, fuzzy
@@ -102,14 +103,19 @@ msgid "About me"
 msgstr "Acerca de mi"
 
 #: app/main/forms.py:12 app/main/forms.py:26 app/main/forms.py:31
+#: app/main/forms.py:36
 msgid "Submit"
 msgstr "Enviar"
 
 #: app/main/forms.py:30
+msgid "Message"
+msgstr ""
+
+#: app/main/forms.py:35
 msgid "Say something"
 msgstr "Escribe algo"
 
-#: app/main/forms.py:35 app/main/routes.py:101
+#: app/main/forms.py:40 app/main/routes.py:115
 msgid "Search"
 msgstr "Buscar"
 
@@ -125,7 +131,7 @@ msgstr "Editar Perfil"
 msgid "Explore"
 msgstr "Explorar"
 
-#: app/main/routes.py:55 app/main/routes.py:119
+#: app/main/routes.py:55 app/main/routes.py:147
 #, python-format
 msgid "User %(username)s not found."
 msgstr "Usuario %(username)s no ha sido encontrado"
@@ -147,21 +153,30 @@ msgstr "Tu post ha sido publicado!"
 msgid "Home"
 msgstr "Inicio"
 
-#: app/main/routes.py:122
+#: app/main/routes.py:127
+#, fuzzy
+msgid "Your message has been sent."
+msgstr "Ya tienes una nueva contrasena"
+
+#: app/main/routes.py:129
+msgid "Send Message"
+msgstr ""
+
+#: app/main/routes.py:150
 msgid "You cannot unfollow yourself!"
 msgstr "No puedes dejar de seguirte a ti mismo"
 
-#: app/main/routes.py:126
+#: app/main/routes.py:154
 #, python-format
 msgid "You are not following %(username)s"
 msgstr "Ya no estas siguiendo a %(username)s"
 
-#: app/templates/_post.html:16
+#: app/templates/_post.html:18
 #, python-format
 msgid "%(username)s said %(when)s"
 msgstr "%(username)s dijo %(when)s"
 
-#: app/templates/_post.html:27
+#: app/templates/_post.html:29
 msgid "Translate"
 msgstr "Traducir"
 
@@ -169,33 +184,76 @@ msgstr "Traducir"
 msgid "Login"
 msgstr "Iniciar session"
 
-#: app/templates/base.html:37
+#: app/templates/base.html:37 app/templates/messages.html:6
+msgid "Messages"
+msgstr ""
+
+#: app/templates/base.html:38
 msgid "Profile"
 msgstr "Perfil"
 
-#: app/templates/base.html:38
+#: app/templates/base.html:39
 msgid "Logout"
 msgstr "Cerrar session"
 
-#: app/templates/base.html:74
+#: app/templates/base.html:75
 msgid "Error: Could not contact server."
 msgstr "Error: No se ha podido establecer contacto con el servidor"
+
+#: app/templates/messages.html:14 app/templates/messages.html:19
+msgid "Newer messages"
+msgstr ""
+
+#: app/templates/search.html:6
+msgid "Search Results"
+msgstr ""
+
+#: app/templates/search.html:15
+msgid "Previous results"
+msgstr ""
+
+#: app/templates/search.html:20
+msgid "Next results"
+msgstr ""
+
+#: app/templates/send_message.html:7
+#, python-format
+msgid "Send Message to %(recipient)s"
+msgstr ""
 
 #: app/templates/user.html:15
 msgid "Edit your profile"
 msgstr "Edita tu profil"
 
-#: app/templates/user.html:20
+#: app/templates/user.html:20 app/templates/user_popup.html:24
 msgid "Follow"
 msgstr "Sigue"
 
-#: app/templates/user.html:27
+#: app/templates/user.html:27 app/templates/user_popup.html:31
 msgid "Unfollow"
 msgstr "Deja de seguir"
 
-#: app/templates/user.html:44
+#: app/templates/user.html:32
+msgid "Send private messge"
+msgstr ""
+
+#: app/templates/user.html:47
 msgid "Newer posts"
 msgstr "Articulos siguientes"
+
+#: app/templates/user_popup.html:13
+msgid "Last seen on"
+msgstr ""
+
+#: app/templates/user_popup.html:16
+#, python-format
+msgid "%(count)d followers"
+msgstr ""
+
+#: app/templates/user_popup.html:17
+#, python-format
+msgid "%(count)d following"
+msgstr ""
 
 #: app/templates/errors/404.html:6
 msgid "Not Found"
